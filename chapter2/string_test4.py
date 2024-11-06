@@ -25,5 +25,6 @@ data = "  itwill  "
 print(data.strip())
 
 # 7. 다음과 같은 문자열이 있을 때 이를 대문자 ITWILL_BUSAN으로 변경하세요.
-
+a = "itwill_busan"
+print(a.upper())
 
