@@ -28,3 +28,10 @@ print(data.strip())
 a = "itwill_busan"
 print(a.upper())
 
+# 8. 다음과 같은 문자열이 있을 때 이를 소문자 class4로 변경하세요.
+a = "CLASS4"
+print(a.lower())
+
+# 9. 문자열 'itwill_busan'을 'Itwill_busan'으로 변경하세요.
+a = "itwill_busan"
+print()
