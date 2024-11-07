@@ -121,7 +121,7 @@ a = [1, 2, 3]
 print(f'a.pop(index): {a.pop(1)}')
 print(a)
 
-# 리스트에 포함된 요소 xdml 개수 세기(count)
+# 리스트에 포함된 요소 x의 개수 세기(count)
 a = [1, 2, 3, 1]
 print(a.count(1))
 
