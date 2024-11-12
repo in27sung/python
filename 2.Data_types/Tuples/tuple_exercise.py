@@ -41,6 +41,6 @@ a, b, c = temp
 print(a, b, c)
 
 # 10. 1 부터 99까지 정수 중 짝수만 저장된 튜플을 생성하세요.
-even = tuple(range(2,99,2) )
+even = tuple(range(2,99,2))
 print(even)
 
