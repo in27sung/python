@@ -6,9 +6,9 @@ import constructor
 # a = inheritance.FourCal(4, 0)
 # a.div()
 # Traceback (most recent call last):
-#   File "/Users/Insung/PycharmProjects/pythonProject/5.Classes/Classes/method_override.py", line 7, in <module>
+#   File "/Users/Insung/PycharmProjects/python/5.Classes/Classes/method_override.py", line 7, in <module>
 #     a.div()
-#   File "/Users/Insung/PycharmProjects/pythonProject/5.Classes/Classes/inheritance.py", line 27, in div
+#   File "/Users/Insung/PycharmProjects/python/5.Classes/Classes/inheritance.py", line 27, in div
 #     result = self.first / self.second
 #              ~~~~~~~~~~~^~~~~~~~~~~~~
 # ZeroDivisionError: division by zero
