@@ -34,3 +34,23 @@ class FourCal:
     def div(self):
         result = self.first / self.second
         return result
+
+a = FourCal()
+b = FourCal()
+
+a.setdata(4, 2)
+b.setdata(3, 8)
+
+print(a.add())
+print(a.sub())
+print(a.mul())
+print(a.div())
+
+print(b.add())
+print(b.sub())
+print(b.mul())
+print(b.div())
+
+# a = FourCal()
+# a.add()
+# 오류 발생! AttrirbuteError: 'FourCal' object has no attribute 'first'

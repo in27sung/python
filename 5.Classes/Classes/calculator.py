@@ -103,7 +103,7 @@ a.setdata(4, 2)
 a = FourCal()
 FourCal.setdata(a, 4, 2)
 
-# 반면, '객체.메서드' 형태로 ㅊ호출할 때는 self를 반드시 생략해서 호출해야 한다.
+# 반면, '객체.메서드' 형태로 호출할 때는 self를 반드시 생략해서 호출해야 한다.
 a = FourCal()
 a.setdata(4, 2)
 
