@@ -2,9 +2,9 @@
 # try except를 사용하여 예외적으로 오류를 처리할 수 있다.
 
 # 오류 발생 예
-# 1. 디렉터리 안에 없는 파일을 열러고 시도했을 때 발생하는 오류
-# f = open("나없는파일.txt", 'r')
-# FileNotFoundError: [Errno 2] No such file or directory: '나없는파일.txt'
+# 1. 디렉터리 안에 없는 파일을 열려고 시도 했을 때 발생하는 오류
+# f = open("나없는 파일.txt", 'r')
+# FileNotFoundError: [Error 2] No such file or directory: '나없는 파일.txt'
 
 # 2. 0으로 다른 숫자를 나누느 경우 발생하는 오류
 # 4 / 0

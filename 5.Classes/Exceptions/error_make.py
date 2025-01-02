@@ -1,4 +1,3 @@
-
 # 예외 만들기
 # - Exception 클래스를 상속하여 직접 예외를 만들어 사용할 수 있다.
 class MyError(Exception):
