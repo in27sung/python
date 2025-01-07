@@ -62,7 +62,7 @@ print(format_time)
 # time.sleep
 # time.sleep 함수는 주로 루프 안에서 많이 사용한다. 이 함수를 사용하면 일정한 시간 간격을
 # 두고 루프를 실행할 수 있다.
-for i in range(10):
+for i in range(3):
     print(i)
     time.sleep(0.5) # 0.5초 간격
 
@@ -75,10 +75,46 @@ print(time.asctime())
 
 print(time.strftime('%c'))
 
+print('-' * 80)
 
+# math.gcd
+# math.gcd 함수를 이용하면 최대 공약수(greatest common divisor)를 쉽게 구할 수 있다.
+# 어린이집에서 사탕 60개, 초콜릿 100개, 젤리 80개를 준비했다. 똑같이 나누어 봉지에 담는다면
+# 최대 몇 봉지까지 만들 수 있을까?
+import math
+snack = math.gcd(60, 100, 80)
+print(snack) # 20
 
+print(60/20, 100/20, 80/20)
+# -> 3.0, 5.0, 4.0
+# 한 봉지당 사탕 3개씩, 초콜릿 5개씩, 젤리 4개씩 담으면 된다.
 
+# math.lcm
+# math.lcm은 최소 공배수(least common multiple)를 구할 떄 사용하는 함수
+# 정류장에 시내버스는 15분, 마을버스는 25분마다 도착한다고 한다.
+# 오후 1시에 두 버스가 동시에 도착했다고 할 때 두 버스가 동시에 도착할 다음 시각을 알려면 어떻게
+# 해야할까?
 
+print(math.lcm(15, 25))
+# 최소 공배수는 75이다. 즉, 1시 이후 75분 이후에 다시 두 버스는 동시에 정류장에 도착
+# 2시 15분
 
+print('-' * 80)
 
+# random
+# random은 난수(규칙이 없는 임의의 수)를 발생시키는 모듈
+# 먼저 random과 randint 함수에 대해 알아보자.
+import random
+print(random.random())
+#  0.0 ~ 1.0 사이의 실수 중에서 난수값을 리턴
 
+print(random.randint(1, 10))
+# 1 ~ 10 사이의 정수 중에서 난수 값을 리턴
+
+print(random.randint(1, 100))
+# 1 ~ 100
+
+import random_pop
+data = [1, 2, 3, 4, 5]
+while data:
+    print(random_pop.random_pop2(data))
