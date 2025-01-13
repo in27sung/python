@@ -118,3 +118,61 @@ import random_pop
 data = [1, 2, 3, 4, 5]
 while data:
     print(random_pop.random_pop2(data))
+
+# glob
+# 특정 디렉터리에 이쓴ㄴ 파일 이름 모두를 알아야 할 때가 있다. 이럴 때 사용하는 모듈이 바로 glob이다.
+
+import glob
+result = glob.glob("/Users/Insung/Documents/doit*")
+print(result)
+
+# pickle
+# 객체의 형태를 그대로 유지하면서 파일에 저장하고 불러올 수 있게 하는 모듈이다.
+# 다음 예는 pickle 모듈의 dump 함수를 사용하여 딕셔너리 객체인 data를 그대로 파일에 저장하는 방법을 보여준다.
+
+import pickle
+f = open("test.txt", 'wb')
+data = {1: 'python', 2: 'you need'}
+pickle.dump(data, f)
+f.close()
+
+# pickle.dump로 저장한 파일을 pcikle.load를 사용해서 원래 있던 딕셔너리 객체(data) 상태 그대로 불러오는 예이다.
+f = open("test.txt", 'rb')
+data = pickle.load(f)
+print(data)
+
+# OS
+# os 모듈은 환경 변수나 디렉터리, 파일 등의 OS 자원을 제어할 수 있게 해 주는 모듈이다.
+
+# os.environ
+# 내 시스템의 환경 변숫값을 알고 싶을 때
+# 시스템은 제각기 다른 환경 변숫값을 가지고 있는데, os.environ은 현재 시스템의 환경 변숫값을 리턴한다.
+
+import os
+os.environ
+
+# os.environ은 환경 변수에 대한 정보를 딕셔너리 형태로 구성된 environ 객체로 리턴한다.
+# 자세히 보면 여러 가지 유요한 정보를 찾을 수 있다.
+
+# print(os.environ['PATH'])
+
+# os.chdir(디렉터리 위치 변경하기)
+# os.chdir를 사용하면 다음과 같이 현재 디렉터리의 위치를 변경할 수 있다.
+os.chdir("/Users/Insung/Documents/doit")
+
+# os.getcwd(디렉터리 위치 돌려받기)
+print(os.getcwd())
+
+# os.system(시스템 명령어 호출하기)
+# 시스템 자체의 프로그램이나 기타 명령어를 파이썬에서 호출할 수도 있다. os.system("명령어")처럼 사용한다.
+# 다음은 현재 디렉터리에서 시스템 명령어 dir을 실행하는 예이다.
+
+os.system("ls")
+
+# os.popen(실행한 시스템 명령어의 결괏값 돌려받기)
+# os.popen은 시스템 명령어를 실행한 결괏값을 읽기 모드 형태의 파일 객체로 리턴한다.
+f = os.popen("ls")
+
+# 읽어 들인 파일 객체의 내용을 보기 위해서는 다음과 같이 하면 된다.
+print(f.read())
+
