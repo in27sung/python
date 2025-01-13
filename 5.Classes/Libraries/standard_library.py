@@ -176,3 +176,17 @@ f = os.popen("ls")
 # 읽어 들인 파일 객체의 내용을 보기 위해서는 다음과 같이 하면 된다.
 print(f.read())
 
+# tempfile
+# 파일을 임시로 만들어서 사용할 때 유용한 모듈이 바로 tempfile이다. tempfile.mkstemp()는
+# 중복되지 않는 임시 파일의 이름을 무작위로 만들어서 리턴한다.
+
+import tempfile
+filename = tempfile.mkstemp()
+print(filename)
+
+# tempfile.TemporaryFile()은 임시 저장 공간으로 사용할 파일 객체를 리턴한다. 이 파일은
+# 기본적으로 바이너리 쓰기 모드(wb)를 갖는다. f.close()가 호출되면 이 파일은 자동으로 삭제된다.
+
+import tempfile
+f = tempfile.TemporaryFile()
+f.close()
