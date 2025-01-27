@@ -47,4 +47,4 @@ def func(*args, **kwargs):
 
 func(1, 2, 3, name='foo', age=3)
 
-# 이처럼 func 함수에 *ㅁㄱㅎㄴ, **kwargs를 사용하면 입력 인수를 자유롭게 받을 수 있다.
+# 이처럼 func 함수에 *args, **kwargs를 사용하면 입력 인수를 자유롭게 받을 수 있다.
