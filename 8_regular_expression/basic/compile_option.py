@@ -56,6 +56,7 @@ print(p.findall(data)) # ['python one', 'python two', 'python three']
 
 charref = re.compile(r'&[#](0[0-7]+|[0-9]+|x[0-9a-fA-F]+);')
 
+# 여러 줄로 작성할 수 있어 정규식을 보기 편하게 만들 수 있다.
 charref = re.compile(r"""
 &[#]                # Start of a numeric entity reference
 (
@@ -65,3 +66,9 @@ charref = re.compile(r"""
 )
 ;                   # Trailing semicolon
 """, re.VERBOSE)
+# 정규식을 컴파일할 때 re.VERBOSE 옵션을 주면 문자열에 사용된 whitespace는 컴파일할 때 제거된다.
+# 단, [] 내에 사용된 whitespace는 제외한다.
+# 컴파일 옵션을 사용할 때는 |(파이프) 기호를 사용하여 함께 사용할 수 있다.
+
+
+
